@@ -33,7 +33,7 @@ public class EnemySpawner : MonoBehaviour
 
                     Instantiate(enemyPrefab, 
                         this.currentWave.GetStartingWaypoint().position, 
-                        Quaternion.identity,
+                        Quaternion.Euler(0, 0, 180),
                         this.transform);
                     
                     yield return new WaitForSeconds(this.currentWave.GetRandomSpawnTime());

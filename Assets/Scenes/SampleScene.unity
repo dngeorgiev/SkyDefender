@@ -257,6 +257,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d1bd6c6d06a8e4247877afc89053ae47, type: 2}
   - {fileID: 11400000, guid: eb96a209523694c728c708edea8ffadc, type: 2}
   timeBetweenWaves: 5
+  isRunning: 0
 --- !u!1 &1796605786
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +349,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4713925567997504218, guid: 6cc16aba5a3074f719a75a459d18bc6a, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 1722226766472693717, guid: 605fbf2429de84fd6ba2a6b939579f58, type: 3}
     - target: {fileID: 4960566108701880273, guid: 6cc16aba5a3074f719a75a459d18bc6a, type: 3}
       propertyPath: m_Name
       value: Player

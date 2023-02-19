@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 5137736957151718968}
   - component: {fileID: 7649242569641817665}
   - component: {fileID: 3216193231638597097}
-  m_Layer: 0
+  - component: {fileID: -5235883604667871613}
+  m_Layer: 7
   m_Name: GreenEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -77,12 +78,12 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -675656825
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c9b07e4901a464becb342f8313e3180f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 1
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
@@ -172,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  hitEffect: {fileID: 130362807941385310, guid: 14c70090c861c45b6bd2e141d18488dc, type: 3}
 --- !u!114 &3216193231638597097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,3 +187,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+--- !u!114 &-5235883604667871613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103713391297099398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7240373e411844ea59e226797d09289c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1722226766472693717, guid: 9bc6e099baff44779abee18c9ded3f89, type: 3}
+  projectileSpeed: 7.5
+  projectileLifetime: 5
+  baseFiringRate: 1
+  useAI: 1
+  firingRateVariance: 0.5
+  minimumFiringRate: 0.2
+  isFiring: 0

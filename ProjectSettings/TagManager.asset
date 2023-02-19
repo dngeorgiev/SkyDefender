@@ -12,8 +12,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
@@ -48,9 +48,15 @@ TagManager:
   - name: Waypoints
     uniqueID: 4048315297
     locked: 0
+  - name: Bullets
+    uniqueID: 4102310393
+    locked: 0
   - name: Enemies
     uniqueID: 3619310471
     locked: 0
   - name: Player
     uniqueID: 2917352247
+    locked: 0
+  - name: Particles
+    uniqueID: 3735527713
     locked: 0

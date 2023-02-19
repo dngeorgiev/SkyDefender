@@ -13,10 +13,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float paddingTop;
     [SerializeField] private float paddingBottom;
 
+    private Shooter shooter;
+
     private Vector2 minBounds;
     private Vector2 maxBounds;
 
-    private void Start() {
+    private void Awake()
+    {
+        this.shooter = GetComponent<Shooter>();
+    }
+
+    private void Start() 
+    {
         this.InitBounds();    
     }
 
@@ -44,5 +52,13 @@ public class PlayerController : MonoBehaviour
     private void OnMove(InputValue value)
     {
         this.rawInput = value.Get<Vector2>();
+    }
+
+    private void OnFire(InputValue value)
+    {
+        if (this.shooter != null)
+        {
+            this.shooter.isFiring = value.isPressed;
+        }
     }
 }
