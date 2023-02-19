@@ -12,6 +12,10 @@ GameObject:
   - component: {fileID: 2403418817670610885}
   - component: {fileID: 2403418817670610882}
   - component: {fileID: 6245792673731493411}
+  - component: {fileID: -1382258867490914185}
+  - component: {fileID: -758631587984846568}
+  - component: {fileID: -2515294479087143520}
+  - component: {fileID: -3922525427614420937}
   m_Layer: 0
   m_Name: NavyEnemy
   m_TagString: Enemy
@@ -118,3 +122,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d369bc66fcd4c47a219fe08ac07b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &-1382258867490914185
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403418817670610887}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &-758631587984846568
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403418817670610887}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.112086415, y: -0.09073669}
+  serializedVersion: 2
+  m_Radius: 0.8031878
+--- !u!114 &-2515294479087143520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403418817670610887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa55697c2f84c4f5ea646b59b1cf9fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+--- !u!114 &-3922525427614420937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403418817670610887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98374424fc764c70a590463a2742e54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
