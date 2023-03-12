@@ -17,9 +17,14 @@ public class Shooter : MonoBehaviour
     [SerializeField] private float minimumFiringRate = 0.2f;
 
     private Coroutine firingCoroutine;
+    private AudioPlayer audioPlayer;
  
-    [HideInInspector]
-    public bool isFiring;
+    [HideInInspector] public bool isFiring;
+
+    private void Awake()
+    {
+        this.audioPlayer = FindObjectOfType<AudioPlayer>();    
+    }
 
     private void Start()
     {
@@ -63,6 +68,8 @@ public class Shooter : MonoBehaviour
             }
 
             Destroy(instance, this.projectileLifetime);
+
+            this.audioPlayer.PlayShootingClip();
 
             yield return new WaitForSeconds(this.useAI ? this.GetRandomFiringRate() : this.baseFiringRate);
         }
